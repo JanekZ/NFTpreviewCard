@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Outfit";
+}
+
+html, body {
+    background: #0D1A2D;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+main {
+    width: 300px;
+    height: 500px;
+    background: hsl(216, 50%, 16%);
+    padding: 20px;
+    border-radius: 10px;
+    -webkit-box-shadow: 10 10 300px black;
+    box-shadow: 0 0 50px 20px #0c1729;
+
+}
+.top {
+    position: relative;
+    height: 300px;
+}
+
+.hoverable, .view {
+    opacity: 0;
+    width: 0;
+    height: 0;
+
+    transition: opacity 0.3s linear;
+}
+
+.top:hover .hoverable{
+    background: hsl(178, 100%, 50%);
+    z-index: 2;
+    width: 100%;
+    height: 300px;
+    position: absolute;
+    top: 0;
+    border-radius: 10px;
+    opacity: 0.5;
+    transition: opacity 0.3s linear;
+}
+
+.top:hover .view{
+    opacity: 1;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    right: 125px;
+    top: 125px;
+    z-index: 3;
+}
+
+.img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.desc {
+    margin-top: 15px;
+    color: hsl(215, 51%, 70%);
+    font-weight: 300;
+}
+
+.title {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: white;
+    font-weight: 600;
+}
+.title p {
+    width: 50%;
+    transition: color 0.3s linear;
+    margin: 0;
+}
+.title p:hover {
+    color: hsl(178, 100%, 50%); 
+}
+
+.eth_clock {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.item {
+    display: flex;
+}
+
+.item img { 
+    margin-right: 5px;
+}
+
+#eth {
+    color: hsl(178, 100%, 50%);
+}
+
+hr {
+    border: 1px solid hsl(215, 51%, 70%);
+}
+
+.footer {
+    display: flex;
+    justify-content:left;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.footer img {
+    border: 1px solid white;
+    border-radius: 50%;
+    width: 30px;
+    margin-right: 10px;
+}
+
+.author {
+    font-weight: 400;
+    color: white;
+    transition: color 0.3s linear;
+}
+
+.author:hover {
+    color: hsl(178, 100%, 50%); 
+}
+
+.attribution {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
